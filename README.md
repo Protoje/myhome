@@ -1,6 +1,7 @@
 # (linux) My Home
 
-Requires:
+# Requires:
+
 http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot/mini.iso
 
  * tmux
@@ -8,15 +9,22 @@ http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/current/image
  * vim
  * ssh-agent
 
+# Aditional Tools:
 
-Symlink after pull/clone:
+sudo apt install -y openssh-server zsh tmux vim git open-vm-tools python htop iftop bmon tcpdump
+git clone https://github.com/OnkelDom/myhome.git
 
- * ln -s ~/git/home/.gitconfig ~/.gitconfig
- * ln -s ~/git/home/.vimrc ~/.vimrc
- * ln -s ~/git/home/.vim ~/.vim
- * ln -s ~/git/home/.zsh/
- * ln -s ~/git/home/.zshenv ~/.zshenv
- * ln -s ~/git/home/.zshrc ~/.zshrc
- * ln -s ~/git/home/.gitmodules ~/.gitmodules
+# Symlink after pull/clone:
 
-https://www.howtogeek.com/103691/install-linux-mints-new-cinnamon-desktop-on-ubuntu/
+ * ln -s ~/myhome/.gitconfig ~/.gitconfig
+ * ln -s ~/myhome/.vimrc ~/.vimrc
+ * ln -s ~/myhome/.vim ~/.vim
+ * ln -s ~/myhome/.zsh/
+ * ln -s ~/myhome/.zshenv ~/.zshenv
+ * ln -s ~/myhome/.zshrc ~/.zshrc
+ * ln -s ~/myhome/.gitmodules ~/.gitmodules
+ * ln -s ~/myhome/bin ~/bin
+ 
+ sudo vim /etc/passwd | onkeldom shell -> /bin/zsh
+ 
+ reload / relog
