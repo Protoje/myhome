@@ -17,3 +17,5 @@ Symlink after pull/clone:
  * ln -s ~/git/home/.zshenv ~/.zshenv
  * ln -s ~/git/home/.zshrc ~/.zshrc
  * ln -s ~/git/home/.gitmodules ~/.gitmodules
+
+https://www.howtogeek.com/103691/install-linux-mints-new-cinnamon-desktop-on-ubuntu/
