@@ -2,8 +2,9 @@
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle :compinstall filename '~/.zshrc'
 fpath=(~/.zsh/completion $fpath)
-autoload -Uz compinit
+autoload -Uz compinit bashcompinit
 compinit -u
+bashcompinit
 
 # history
 HISTFILE=~/.histfile
@@ -39,8 +40,7 @@ autoload -U colors && colors
 # gitstatus https://github.com/olivierverdier/zsh-git-prompt
 source ~/.zsh/git-prompt/zshrc.sh
 
-PROMPT='%{$fg_bold[green]%}%n%{$reset_color%}@%{$fg_bold[cyan]%}%m %{$fg_bold[yellow]%}%~%{$reset_color%} ✗ '
-RPROMPT='$(git_super_status)[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]'
+PROMPT='$(git_super_status)[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]%{$fg_bold[green]%}%n%{$reset_color%}@%{$fg_bold[cyan]%}%m %{$fg_bold[yellow]%}%~%{$reset_color%} $'
 
 # syntax highlighting
 source ~/.zsh/syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -58,3 +58,4 @@ if whence pbcopy >/dev/null; then
 else
     alias pwrandom="curl -s 'https://www.random.org/passwords/?num=1&len=15&format=plain&rnd=new' | sed 's/.../&-/g;s/-$//'"
 fi
+alias jen="gcloud compute ssh --zone "us-central1-b" jen"
