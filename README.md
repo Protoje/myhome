@@ -1,6 +1,12 @@
-# My Home
-# Requires:
-zsh
-vim
-tmux
-ssh-agent
+# (linux) My Home
+
+Requires:
+
+ * tmux
+ * zsh
+ * vim
+ * ssh-agent
+
+
+Symlink after pull/clone:
+
