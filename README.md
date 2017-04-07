@@ -1,6 +1,6 @@
 # My Home
 # Requires:
-zsh
-vim
-tmux
-ssh-agent
+zsh\n
+vim\n
+tmux\n
+ssh-agent\n
