@@ -1,8 +1,9 @@
 # (linux) My Home
 
 Requires:
+http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot/mini.iso
 
-ctmux
+ * tmux
  * zsh
  * vim
  * ssh-agent
