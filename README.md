@@ -25,6 +25,6 @@ git clone https://github.com/OnkelDom/myhome.git
  * ln -s ~/myhome/.gitmodules ~/.gitmodules
  * ln -s ~/myhome/bin ~/bin
  
- sudo vim /etc/passwd | onkeldom shell -> /bin/zsh
+ sudo vim /etc/passwd | shell -> /bin/zsh
  
  reload / relog
