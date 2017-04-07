@@ -1,2 +1,6 @@
-# dot
-my home
+# My Home
+# Requires:
+zsh
+vim
+tmux
+ssh-agent
