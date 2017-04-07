@@ -10,8 +10,11 @@ http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/current/image
  * ssh-agent
 
 # Aditional Tools:
+sudo apt install -y open-vm-tools # if vm
 
-sudo apt install -y openssh-server zsh tmux vim git open-vm-tools python htop iftop bmon tcpdump
+sudo apt install -y openssh-server zsh tmux vim git python # required for this home
+
+sudo apt install -y htop iftop bmon tcpdump # optional 
 
 git clone https://github.com/OnkelDom/myhome.git
 
