@@ -4,15 +4,10 @@
 
 http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot/mini.iso
 
- * tmux
- * zsh
- * vim
- * ssh-agent
+sudo apt install -y openssh-server zsh tmux vim git python # required for this home
 
 # Aditional Tools:
 sudo apt install -y open-vm-tools # if vm
-
-sudo apt install -y openssh-server zsh tmux vim git python # required for this home
 
 sudo apt install -y htop iftop bmon tcpdump rsync iperf pastebinit screen iproute resolvconf build-essential bzip2 less unzip curl nmap fail2ban lsof pwgen dnsutils ntp # optional 
 
