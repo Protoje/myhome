@@ -1,0 +1,36 @@
+# Basics
+set server = # server (jabber.myserver.com)
+set username = # showing username
+set jid = # serverid
+# Password
+set password = # pass
+# Language
+set lang = de
+# Clienident
+set resource = # computername
+# Priority
+set priority = 1
+# SSL
+set ssl = 1
+set ssl verify = 0
+set ssl_ignore_checks = 1
+# Logging
+set logging = 1
+set logging_dir = "~/.mcabber/logs/"
+set log_muc_conf = 1
+# Multiuserchat
+set nickname = Lenhardt,Dominik
+set muc_auto_whois = 1
+# Messages
+set message = Online 
+set message_avail     = I'm available
+set message_free      = I'm free for chat
+set message_dnd       = Please do not disturb
+set message_notavail  = I'm not available
+set message_away      = I'm away
+# Autoaway
+set autoaway = 600
+set message_autoaway = Auto-away (idle)
+# OTR
+set otr = 1
+set otr_dir = "~/.mcabber/otr"
