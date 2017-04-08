@@ -34,3 +34,59 @@ set message_autoaway = Auto-away (idle)
 # OTR
 set otr = 1
 set otr_dir = "~/.mcabber/otr"
+otrpolicy default manual
+# Keepalive
+set pinginterval = 40
+# Online State ( "_" = offline )
+set roster_display_filter = ofdna
+# URL-Extractor
+set url_regex = "(((https?|ftps?|nntp)://)|www[.][-a-z0-9.]+|(mailto:|news:))(%[0-9A-F]{2}|[-_.!~*';/?:@&=+$,#[:alnum:]])+"
+
+# Colors
+source ~/.mcabber/solarized-dark
+color muc * on
+
+# If you want someone's nick to be the same all the time:
+#color mucnick my_friend yellow
+
+# Buddylist window width (minimum 2, default 24)
+set roster_width=32
+
+set roster_hide_domain = 1
+set buddy_format = 2
+
+# Automatic locking on buddy resource that messages are coming from.
+# Useful when your buddies are chatting from their non-highest priority
+# resources, forcing you to use /say_to command.
+set roster_autolock_resource = 1
+
+# Aliases
+alias me = say /me
+alias online   = status online
+alias away     = status away
+alias dnd      = status dnd
+alias notavail = status notavail
+#alias names = room names
+#alias topic = room topic
+alias rs = roster search
+
+# Key bindings
+# Ctrl-q (17) bound to /roster unread_next
+bind 17 = roster unread_next
+# Ctrl-x (24) bound to /roster alternate
+bind 24 = roster alternate
+# F5 (269) bound to /roster toggle_offline  (centericq-like, IIRC)
+bind 269 = roster toggle_offline
+# F12 (276) bound to /roster toggle
+bind 276 = roster toggle
+# Ctrl-Up/Ctrl-Down bound to /buffer up/down
+bind 521 = buffer up
+bind 514 = buffer down
+# Ctrl-p/Ctrl-n bound to /roster up/down
+bind 16 = roster up
+bind 14 = roster down
+# page up / page down bound to /buffer up/down
+bind 339 = buffer up
+bind 338 = buffer down
+# Ctrl-t bound to /buffer scroll_toggle
+bind 20 = buffer scroll_toggle
