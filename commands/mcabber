@@ -1,0 +1,44 @@
+# Personal manpage for mcabber
+
+Esc				Disable chat mode
+Ctrl-a			Go to the beginning of the input line
+Ctrl-e  		Go to the end of the input line
+Ctrl-l  		Force a refresh
+Up/Down 		Move in the input line history
+PgUp/PgDown 	Move inside the roster (buddylist)
+Tab				Complete current word, in the input line
+Ctrl-g			Cancel completion
+Ctrl-c			Abort multi-line messages and completions
+Ctrl-d			Send/terminate a multi-line message
+Ctrl-p/Ctrl-n	Scroll up/down half a screen in the buffer window (chat mode)
+Ctrl-Left		Move the cursor back to the start of the current or previous word
+Ctrl-Right		Move the cursor forward to the end of the current or next word
+Ctrl-u			Delete from beginning of the line to the cursor
+Ctrl-k			Delete from the cursor to the end of line
+Ctrl-w			Backward kill word
+Ctrl-t			Transpose chars
+Ctrl-o			Accept line and put the next history line in the input line (accept-line-and-down-history)
+
+# Edit buddy aliases
+Select buddy an /rename <name>
+Move buddy 		/move <groupname>
+Delete user		/del
+Userinfo		/info
+Adduser			/add <jid [nickname]>
+Chatroom		/room join|leave|names|nick|privmsg|remove|topic|unlock|destroy, /room invite|kick|ban|role|affil, /room bookmark [add|del] [-autojoin|+autojoin]
+Send to jid		/say text
+Send to jig		/say_to jid text
+Change state	/status [online|avail|invisible|free|dnd|notavail|away [-|StatusMessage]]
+Change state	/status_to jid online|avail|invisible|free|dnd|notavail|away [StatusMessage]
+
+# Multiline
+/msay begin|verbatim|send|send_to|toggle|toggle_verbatim|abort
+
+Send a multi-line message. To write a single message with several lines, the multi-line mode should be used. In multi-line mode, each line (except command lines) typed in the input line will be added to the multi-line message. Once the message is finished, it can be sent to the current selected buddy with the "/msay send" command (or Ctrl-d). The begin subcommand enables multi-line mode. Note that it allows a message subject to be specified. The verbatim multi-line mode disables commands, so that it is possible to enter lines starting with a slash. Only the "/msay" command (with send or abort parameters) can be used to exit verbatim mode. The toggle and toggle_verbatim subcommands can be bound to a key to use the multi-line mode quickly (for example, "bind M109 = msay toggle" to switch using the Meta-m combination).
+begin [subject]	enter multi-line mode 
+verbatim	enter verbatim multi-line mode 
+send	send the current multi-line message to the currently selected buddy 
+send_to jid	send the current multi-line message to "jid" 
+toggle	switch to/from multi-line mode (begin/send) 
+toggle_verbatim	same with verbatim multi-line mode 
+abort	leave multi-line mode without sending the message 
