@@ -38,13 +38,13 @@ otrpolicy default manual
 # Keepalive
 set pinginterval = 40
 # Online State ( "_" = offline )
-set roster_display_filter = ofdna
+set roster_display_filter = ofdna_
 # URL-Extractor
 set url_regex = "(((https?|ftps?|nntp)://)|www[.][-a-z0-9.]+|(mailto:|news:))(%[0-9A-F]{2}|[-_.!~*';/?:@&=+$,#[:alnum:]])+"
 
 # Colors
-source ~/.mcabber/solarized-dark
-color muc * on
+#source ~/.mcabber/solarized-dark
+#color muc * on
 
 # If you want someone's nick to be the same all the time:
 #color mucnick my_friend yellow
@@ -69,24 +69,3 @@ alias notavail = status notavail
 #alias names = room names
 #alias topic = room topic
 alias rs = roster search
-
-# Key bindings
-# Ctrl-q (17) bound to /roster unread_next
-bind 17 = roster unread_next
-# Ctrl-x (24) bound to /roster alternate
-bind 24 = roster alternate
-# F5 (269) bound to /roster toggle_offline  (centericq-like, IIRC)
-bind 269 = roster toggle_offline
-# F12 (276) bound to /roster toggle
-bind 276 = roster toggle
-# Ctrl-Up/Ctrl-Down bound to /buffer up/down
-bind 521 = buffer up
-bind 514 = buffer down
-# Ctrl-p/Ctrl-n bound to /roster up/down
-bind 16 = roster up
-bind 14 = roster down
-# page up / page down bound to /buffer up/down
-bind 339 = buffer up
-bind 338 = buffer down
-# Ctrl-t bound to /buffer scroll_toggle
-bind 20 = buffer scroll_toggle
