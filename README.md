@@ -14,6 +14,7 @@ sudo apt install -y htop iftop bmon tcpdump rsync iperf pastebinit screen iprout
 sudo apt install ruby
 
 sudo gem install net-ssh
+
 sudo gem update
 
 git clone https://github.com/OnkelDom/myhome.git
