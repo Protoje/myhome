@@ -11,7 +11,7 @@ sudo apt install -y openssh-server zsh tmux vim git python # required for this h
 # Aditional Tools:
 sudo apt install -y open-vm-tools # if vm
 
-sudo apt install -y htop iftop bmon tcpdump rsync iperf pastebinit screen iproute resolvconf build-essential bzip2 less unzip curl nmap fail2ban lsof pwgen dnsutils ntp xclip ncdu mcabber xclip # optional
+sudo apt install -y htop iftop bmon tcpdump rsync iperf pastebinit screen iproute resolvconf build-essential bzip2 less unzip curl nmap fail2ban lsof pwgen dnsutils ntp xclip ncdu mcabber xclip lynx ipcalc # optional
 
 sudo apt install ruby
 
