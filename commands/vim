@@ -1,0 +1,5 @@
+# Commands for VIM
+
+# Edit CSV-Files
+:$ArrangeColumn   # Set Tabs
+:$UnArrangeColumn # Unset Tabs
