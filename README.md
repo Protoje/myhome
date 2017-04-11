@@ -37,9 +37,12 @@ git clone https://github.com/OnkelDom/myhome.git
  # Other Stuff
  
  vim ~/.bashrc
+ 
  alias tmuxx='tmux at' # go to last session
+ 
  alias lynx='lynx -accept_all_cookies'
  
+ # Change Shell
  sudo vim /etc/passwd # usershell -> /bin/zsh
  
  sudo reboot
