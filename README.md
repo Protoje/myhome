@@ -1,19 +1,15 @@
 # (linux) My Home
 
-This is a repo for my personal shell with zsh, tmux, vim and mcabber
+This is a repo for my personal shell with zsh, tmux, vim, mcabber, git and many other usefull tools for my workspace on linux
 
 # Requires:
 
 http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot/mini.iso
 
-sudo apt install -y openssh-server zsh tmux vim git python # required for this home
+sudo apt install -y openssh-server zsh tmux vim git python mcabber htop iftop bmon tcpdump rsync iperf pastebinit screen iproute resolvconf build-essential bzip2 less unzip curl nmap fail2ban lsof pwgen dnsutils ntp xclip ncdu xclip lynx ipcalc ruby awk sed
 
 # Aditional Tools:
 sudo apt install -y open-vm-tools # if vm
-
-sudo apt install -y htop iftop bmon tcpdump rsync iperf pastebinit screen iproute resolvconf build-essential bzip2 less unzip curl nmap fail2ban lsof pwgen dnsutils ntp xclip ncdu mcabber xclip lynx ipcalc # optional
-
-sudo apt install ruby
 
 sudo gem install net-ssh
 
@@ -38,11 +34,13 @@ git clone https://github.com/OnkelDom/myhome.git
  
  vim ~/.bashrc
  
- alias tmuxx='tmux at' # go to last session
+ alias attmux='tmux at' # go to last session
  
  alias lynx='lynx -accept_all_cookies'
  
  # Change Shell
- sudo vim /etc/passwd # usershell -> /bin/zsh
+ sudo vim /etc/passwd
+
+ :%s/\/bin\/bash/\/bin\/zsh/g
  
  sudo reboot
