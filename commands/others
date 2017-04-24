@@ -1,0 +1,25 @@
+# Random Commands
+
+# Ordner Recrusiv finden und löschen:
+sudo find /data/plex -type d -iname @eaDir -exec echo rm -r {} \;
+
+# Dateien Recrusiv finden und löschen:
+sudo find /data/plex -name '*vsmeta' -delete
+
+# Ordnerberechtigung Recrusiv auf 755 setzen
+sudo find /data/plex/ -type d -exec chmod 755 {} +
+
+# Dateiberechtigungen Recrusiv auf 644 setzen
+sudo find /data/plex/ -type f -exec chmod 644 {} +
+
+# Größe in MB für einen Ordner anzeigen
+sudo du -shm /data/plex/serien/
+
+# IP-Adresse setzen
+sudo ip addr add 192.168.250.132/24 broadcast 192.168.250.255 dev ens160
+
+# /boot aufräumen
+dpkg --get-selections|grep 'linux-image*'|awk '{print $1}'|egrep -v "linux-image-$(uname -r)|linux-image-generic" |while read n;do apt-get -y remove $n;done
+
+# Schleife für auslesen von Zertifikaten für haproxy
+$for i in abnahme*; do echo "  haproxy_cert_$i:"; echo "    ensure: file"; echo "    owner: 'root'"; echo "    group: 'root'"; echo "    mode: '0400'"; echo "    path: '/etc/haproxy/certs/$i'"; echo "    source: "\'?{cross_ref:haproxy:certs}/$i\' ;done

@@ -1,0 +1,8 @@
+# tmux commands
+
+# Command Mode
+ctrl + b
+
+ctrl + b + | # new window horizontal
+ctrl + b + - # new window vertical
+
