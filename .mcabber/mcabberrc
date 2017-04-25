@@ -38,7 +38,7 @@ otrpolicy default manual
 # Keepalive
 set pinginterval = 40
 # Online State ( "_" = offline )
-set roster_display_filter = ofdna_
+set roster_display_filter = ofdna
 # URL-Extractor
 set url_regex = "(((https?|ftps?|nntp)://)|www[.][-a-z0-9.]+|(mailto:|news:))(%[0-9A-F]{2}|[-_.!~*';/?:@&=+$,#[:alnum:]])+"
 

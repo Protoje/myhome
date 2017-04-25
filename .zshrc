@@ -61,3 +61,7 @@ fi
 alias jen="gcloud compute ssh --zone "us-central1-b" jen"
 alias pbcopy="xclip -selection clipboard"
 alias pbpaste="xclip -selection clipboard -o"
+# some more aliases
+alias tmuxx='tmux at'
+alias lynx='lynx -accept_all_cookies'
+alias yamllint='yamllint -f parsable -c ~/foundation/hieradata/.yamllint'
