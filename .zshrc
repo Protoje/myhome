@@ -61,3 +61,5 @@ fi
 alias jen="gcloud compute ssh --zone "us-central1-b" jen"
 alias pbcopy="xclip -selection clipboard"
 alias pbpaste="xclip -selection clipboard -o"
+alias attmux='tmux at' # go to last session
+alias lynx='lynx -accept_all_cookies'

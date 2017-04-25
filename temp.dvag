@@ -1,7 +1,0 @@
-Acquire::http::proxy "http://proxy.id.dvag.com:3128";
-Acquire::https::proxy "http://proxy.id.dvag.com:3128";
-Acquire::ftp::proxy "http://proxy.id.dvag.com:3128";
-
-Acquire::http::Pipeline-Depth "0";
-Acquire::http::No-Cache true;
-Acquire::BrokenProxy true;
