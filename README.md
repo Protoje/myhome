@@ -32,7 +32,7 @@ git clone https://github.com/OnkelDom/myhome.git
  
  # Other Stuff
  
- vim ~/.bashrc
+ vim ~/.zshrc
  
  alias attmux='tmux at' # go to last session
  
