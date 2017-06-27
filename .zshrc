@@ -48,6 +48,13 @@ source ~/.zsh/syntax-highlighting/zsh-syntax-highlighting.zsh
 # work
 [ -f ~/.zshrc.work ] && source ~/.zshrc.work
 
+# find ssh-agent
+if [ -z "$SSH_AUTH_SOCK" ]
+then
+   eval $(ssh-agent) > /dev/null
+   ssh-add -l > /dev/null || alias ssh='ssh-add -l > /dev/null || ssh-add && unalias ssh; ssh'
+fi
+
 # locale
 export LC_ALL="en_US.UTF-8"
 
