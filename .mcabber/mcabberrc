@@ -1,9 +1,9 @@
 # Basics
-set server = jabber.dvag.com
-set username = p13sp36
-set jid = Lenhardt,Dominik
+set server = 
+set username = 
+set jid = 
 # Password
-set password = IchMacheSport1!
+set password = 
 # Language
 set lang = de
 # Clienident
