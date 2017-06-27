@@ -72,5 +72,3 @@ alias pbpaste="xclip -selection clipboard -o"
 alias tmuxx='tmux at'
 alias lynx='lynx -accept_all_cookies'
 alias yamllint='yamllint -f parsable -c ~/foundation/hieradata/.yamllint'
-alias dlhlnx="ssh -p 36022 onkeldom@185.64.159.172"
-alias phelp="ssh hiera@puppet-helper.1.mgmt.dvag.net -p 8150 hiera_debug"
