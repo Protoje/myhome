@@ -40,6 +40,8 @@ git clone https://github.com/OnkelDom/myhome.git
  # Other Stuff
  # Install Docker-CE and Docker-Compose
  
+ Links: https://docs.docker.com/compose/install/ | https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/
+ 
  sudo apt-get remove docker docker-engine docker.io
  
  sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
