@@ -75,9 +75,15 @@ sudo chmod 755 /usr/bin/rclone
 sudo mkdir -p /usr/local/share/man/man1
 sudo cp rclone.1 /usr/local/share/man/man1/
 sudo mandb
+# Configure rclone
+sudo mkdir /mnt/google
+sudo chown onkeldom:onkeldom /mnt/google
+rclone config
+1. create the connection to google
+2. create crypted folder
 # Copy and start systemd file
 sudo cp rclonemount.service /etc/systemd/system/
 sudo systemctl enable rclonemount.service
 sudo systemctl start rclonemount.service
 ```
-Run *rclone config* to setup. See rclone config docs for more details.
+rclone config docs for more details.
