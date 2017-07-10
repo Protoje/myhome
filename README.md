@@ -69,6 +69,13 @@ git clone https://github.com/OnkelDom/myhome.git
  
  # rClone Install, Config and Mount
  
+ sudo vim /etc/fuse.conf
+ 
+ ```
+ mount_max = 1000
+ user_allow_other
+ ```
+ 
  https://rclone.org/install/
  
  https://rclone.org/commands/rclone_mount/
