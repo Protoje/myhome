@@ -1,0 +1,14 @@
+[Unit]
+Description=rclonemount-google
+Documentation=http://rclone.org/docs
+After=network-online.target
+
+[Service]
+Type=simple
+User=onkeldom
+ExecStart=/usr/bin/rclone mount --allow-other google-encrypt: /mnt/google &
+ExecStop=/bin/fusermount -u -z /mnt/google
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
