@@ -66,3 +66,13 @@ git clone https://github.com/OnkelDom/myhome.git
  docker-compose --version
  
  docker --version
+ 
+ # rClone Install, Config and Mount
+ 
+ https://rclone.org/install/
+ 
+ https://rclone.org/commands/rclone_mount/
+ 
+ https://rclone.org/drive/
+ 
+ https://github.com/dweidenfeld/plexdrive/blob/master/TUTORIAL.md
