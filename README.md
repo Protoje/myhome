@@ -6,7 +6,7 @@ This is a repo for my personal shell with zsh, tmux, vim, mcabber, git and many 
 
 http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot/mini.iso
 
-sudo apt install -y openssh-server zsh tmux vim git python mcabber htop iftop bmon tcpdump rsync pastebinit screen iproute resolvconf build-essential bzip2 less unzip curl nmap fail2ban lsof pwgen dnsutils ntp xclip ncdu xclip lynx ipcalc ruby tig clusterssh
+sudo apt install -y openssh-server zsh tmux vim git python mcabber htop iftop bmon tcpdump rsync pastebinit screen iproute resolvconf build-essential bzip2 less unzip curl nmap fail2ban lsof pwgen dnsutils ntp xclip ncdu xclip lynx ipcalc ruby tig fuse
 
 # Aditional Tools:
 sudo apt install -y open-vm-tools # if vm
