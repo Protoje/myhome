@@ -82,6 +82,7 @@ rclone config
 1. create the connection to google
 2. create crypted folder
 # Copy and start systemd file
+sudo cp -R ~/.config /root
 sudo cp rclonemount.service /etc/systemd/system/
 sudo systemctl enable rclonemount.service
 sudo systemctl start rclonemount.service
