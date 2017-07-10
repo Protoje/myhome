@@ -1,4 +1,4 @@
-# (linux) My Home (Ubuntu 16.04 LTS minimal)
+# My Home (Ubuntu 16.04 LTS minimal)
 
 This is a repo for my personal shell with zsh, tmux, vim, mcabber, git and many other usefull tools for my workspace on linux
 
@@ -52,18 +52,32 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 docker --version
 ```
-# rClone Install, Config and Mount
+# rclone Install, Config and Mount
  
 sudo vim /etc/fuse.conf
 ```
 mount_max = 1000
 user_allow_other
 ```
- 
- https://rclone.org/install/
- 
- https://rclone.org/commands/rclone_mount/
- 
- https://rclone.org/drive/
- 
- https://github.com/dweidenfeld/plexdrive/blob/master/TUTORIAL.md
+## Fetch and unpack rclone
+
+Links: https://rclone.org/install/ | https://rclone.org/commands/rclone_mount/ | https://rclone.org/drive/
+```
+# Download files
+curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip
+unzip rclone-current-linux-amd64.zip
+cd rclone-*-linux-amd64
+# Copy binary file
+sudo cp rclone /usr/bin/
+sudo chown root:root /usr/bin/rclone
+sudo chmod 755 /usr/bin/rclone
+# Install manpage
+sudo mkdir -p /usr/local/share/man/man1
+sudo cp rclone.1 /usr/local/share/man/man1/
+sudo mandb
+# Copy and start systemd file
+sudo cp rclonemount.service /etc/systemd/system/
+sudo systemctl enable rclonemount.service
+sudo systemctl start rclonemount.service
+```
+Run *rclone config* to setup. See rclone config docs for more details.
