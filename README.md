@@ -56,6 +56,8 @@ sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
 docker --version
 docker-compose --version
 docker-machine --version
+# Add your User to docker group
+sudo usermod -aG docker $USER
 ```
 # rclone Install, Config and Mount
  
