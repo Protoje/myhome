@@ -33,10 +33,11 @@ sudo vim /etc/passwd
 :%s/\/bin\/bash/\/bin\/zsh/g
 relog
 ```
-# Install Docker-CE and Docker-Compose
+# Install Docker-CE, Docker-Compose and Docker-Machine
  
 Links: https://docs.docker.com/compose/install/ | https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/
-``` 
+```
+# Docker-CE
 sudo apt-get remove docker docker-engine docker.io
 sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -45,11 +46,17 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt-get update
 sudo apt install docker-ce
 sudo -i
-curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose 
-ctrl+d
-sudo chmod +x /usr/local/bin/docker-compose
-docker-compose --version
+# Docker-Compose
+curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` > /tmp/docker-compose &&
+chmod +x /tmp/docker-compose &&
+sudo cp /tmp/docker-compose /usr/local/bin/docker-compose
+# Docker-Machine
+curl -L https://github.com/docker/machine/releases/download/v0.12.1/docker-machine-`uname -s`-`uname -m` > /tmp/docker-machine &&
+chmod +x /tmp/docker-machine &&
+sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
 docker --version
+docker-compose --version
+docker-machine --version
 ```
 # rclone Install, Config and Mount
  
