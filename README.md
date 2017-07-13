@@ -45,7 +45,6 @@ sudo apt-key fingerprint 0EBFCD88
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt-get update
 sudo apt install docker-ce
-sudo -i
 # Docker-Compose
 curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` > /tmp/docker-compose &&
 chmod +x /tmp/docker-compose &&
